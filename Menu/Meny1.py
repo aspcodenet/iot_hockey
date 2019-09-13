@@ -1,3 +1,25 @@
+def GetIntValue():
+    while True:
+        try:
+            val = int(input("Ange ett värde"))
+            return val
+        except:
+            print("Ange ett TAL för sjutton")
+    
+
+#Programmet
+selection = GetIntValue()
+if selection == 1:
+    print("Hello")
+print("Programmet fortsätter")
+
+
+
+
+
+
+
+
 playerPoints = {}
 
 while True:

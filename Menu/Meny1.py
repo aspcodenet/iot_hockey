@@ -1,3 +1,52 @@
+playerPoints = {}
+
+while True:
+    namn = input("Ange spelarnamn")
+    if namn == "exit":
+        break
+    points = int(input("Ange poäng"))
+    playerPoints[namn] = points
+
+#for boxNamnet in playerPoints:
+#    print(f"{boxNamnet} har poäng {playerPoints[boxNamnet]}")
+
+namn = input("Ange spelare som du vill söka på ") 
+print(f" {namn} har {playerPoints[namn]} poäng")
+
+
+suddenPoints = 13
+suddenPoints = 14
+#listOfNumbers = [1,344,5,66]
+listOfNumbers = []
+listOfScandinavianCountries = ["Sweden", "Denmark", "Norway"]
+listOfScandinavianCountries[2] = "Norge"
+
+listOfScandinavianCountries.sort()
+listOfScandinavianCountries.pop()
+
+
+for countryName in listOfScandinavianCountries:
+    print(countryName)
+
+
+land = input("Vilket land ska from nu också vara skandinaviskt?")
+listOfScandinavianCountries.append(land)
+for countryName in listOfScandinavianCountries:
+    print(countryName)
+
+print(f"Nu är så här många {listOfScandinavianCountries.count()}")
+
+for i in listOfNumbers:
+    print(i)
+
+
+
+
+
+
+
+
+
 
 def SkapaNySpelare():
         print("******** Skapa ny spelare *******")
